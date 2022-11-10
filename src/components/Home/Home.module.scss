@@ -1,0 +1,13 @@
+$light-blue: #535bf2;
+
+.bg {
+  @apply h-full w-full bg-blue-300 p-0 m-0;
+}
+
+.error {
+  @apply text-2xl text-red-600;
+}
+
+.productsNF {
+  @apply text-2xl text-blue-200;
+}
