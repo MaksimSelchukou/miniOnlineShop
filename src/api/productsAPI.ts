@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ProductType } from "../components/Home/Home";
+import { ProductType } from "../components/pages/home/Home";
 
 type ResponceType = {
   products: Array<ProductType>;
