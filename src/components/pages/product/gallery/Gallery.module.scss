@@ -1,0 +1,20 @@
+.gallery {
+  @apply border border-solid p-4 w-96 h-full mx-auto;
+  .mainImag {
+    @apply border border-solid p-4;
+  }
+
+  .list {
+    @apply grid grid-cols-5 gap-3 mt-3.5;
+    .galItem {
+      @apply border border-solid h-20;
+      &.active {
+        @apply border border-solid border-cyan-400;
+      }
+
+      > div {
+        @apply h-full;
+      }
+    }
+  }
+}

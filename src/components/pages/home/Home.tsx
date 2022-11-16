@@ -4,6 +4,7 @@ import { productsAPI } from "../../../api/productsAPI";
 import { useQuery } from "@tanstack/react-query";
 import { ProductItem } from "../../ui/product-item/ProductItem";
 import { Layout } from "../../ui/layout/Layout";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export type ProductType = {
   id: number;
@@ -28,25 +29,8 @@ export const Home = () => {
     }
   );
 
-  // const [products, setProducts] = useState<Array<ProductType>>([]);
-  // const [error, setError] = useState("");
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const { products }: any = await productsAPI.getProducts();
-  //       setProducts(products);
-  //     } catch (error: any) {
-  //       setError(error);
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   };
-  //   fetchData().then();
-  // }, []);
-
   return (
-    <Layout>
+    <Layout title={"Collection Products"}>
       {isLoading ? (
         <div className={styles.error}>Loading...</div>
       ) : products?.length ? (
