@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactChildren, ReactNode } from "react";
+import React, { PropsWithChildren, ReactNode } from "react";
 import styles from "./Layout.module.scss";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,6 @@ export const Layout = ({ children, title }: LayoutPropsType) => {
         <nav>
           <Link to={"/"}>Home</Link>
           <Link to={"/cart"}>Cart</Link>
-          <Link to={"/product"}>Product</Link>
         </nav>
       </header>
       <div className={styles.layout}>

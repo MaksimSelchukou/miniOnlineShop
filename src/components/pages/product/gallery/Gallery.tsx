@@ -15,6 +15,7 @@ export const Gallery = ({ images }: GalleryType) => {
       <div className={styles.list}>
         {images.map((img, ind) => (
           <button
+            key={img}
             className={cn(styles.galItem, {
               [styles.active]: ind === currentIndex,
             })}

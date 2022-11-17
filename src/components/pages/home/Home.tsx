@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./Home.module.scss";
 import { productsAPI } from "../../../api/productsAPI";
 import { useQuery } from "@tanstack/react-query";
 import { ProductItem } from "../../ui/product-item/ProductItem";
 import { Layout } from "../../ui/layout/Layout";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export type ProductType = {
   id: number;

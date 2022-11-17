@@ -4,7 +4,7 @@ $light-blue: #535bf2;
   @apply grid grid-cols-2 gap-6;
 }
 .bg {
-  @apply  h-full w-full bg-blue-300 p-0 m-0;
+  @apply h-full w-full bg-blue-300 p-0 m-0;
 }
 
 .error {
@@ -13,4 +13,16 @@ $light-blue: #535bf2;
 
 .productsNF {
   @apply text-2xl text-blue-200;
+}
+
+//.group {
+//  @apply flex justify-center mx-5;
+//}
+
+.element {
+  @apply mx-3;
+}
+
+.price {
+  @apply text-red-500;
 }
